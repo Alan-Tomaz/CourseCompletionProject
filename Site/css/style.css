@@ -1,0 +1,267 @@
+body {
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	font-family: 'Open Sans', sans-serif;
+	overflow-x: hidden;
+}
+
+header {
+	width: 100%;
+	height: 100px;
+	display: block;
+	background-color: #101010;
+}
+
+header * {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	text-decoration: none;
+}
+
+.header-1 {
+	padding-left: 20px;
+	max-width: 1000px;
+	height: 100%;
+	display: block;
+	margin: 0 auto;
+}
+
+.header-logo {
+	height: 100%;
+	display: table;
+	float: left;
+}
+
+.header-logo h1 {
+	height: 100%;
+	display: table-cell;
+	vertical-align: middle;
+	font-family: 'Montserrat';
+	font-size: 32px;
+	font-weight: 200;
+}
+
+.header-logo h1 a {
+	color: white;
+}
+
+.header-logo h1 a span {
+	font-weight: 800;
+}
+
+.navigation {
+	float: right;
+	height: 100%;
+}
+
+.navigation a {
+	height: 100%;
+	display: table;
+	float: left;
+	padding: 0 20px;
+}
+
+.navigation a:last-child {
+	padding-left: 70px;
+}
+
+.navigation a li {
+	display: table-cell;
+	vertical-align: middle;
+	height: 100%;
+	color: white;
+	font-family: 'Montserrat';
+	font-size: 16px;
+	font-weight: 500;
+}
+
+.navigation a li:hover {
+	text-decoration: underline;
+}
+
+
+.section-1 img {
+	display: block;
+	margin: 0 auto;
+	margin-top: 80px;
+}
+
+.title-1 {
+	display: block;
+	text-align: center;
+	margin-top: 50px;
+	padding: 0 20px;
+	font-size: 40px;
+	font-family: 'Open Sans', sans-serif;
+}
+
+.text-box1 {
+	text-indent: 1em;
+	text-align: center;
+	font-size: 18px;
+	display: block;
+	width: 80%;
+	margin: 0 auto;
+}
+
+.hr-1 {
+	width: 90%;
+	border-radius: 50%;
+	color: black;
+}
+
+.subtitle-1 {
+	display: block;
+	text-align: center;
+	margin-top: 50px;
+	padding: 0 20px;
+	font-size: 32px;
+	font-family: 'Mitr',
+		sans-serif;
+}
+
+.subtitle-1 a{
+	text-decoration: none;
+	color: black;
+}
+
+.subtitle-1 a:hover {
+	text-decoration: underline black;
+	opacity: 80%;
+}
+
+footer {
+	position: relative;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-color: #111;
+	height: auto;
+	width: 100vw;
+	font-family: "Open Sans";
+	padding-top: 40px;
+	color: white;
+	margin-top: 200px;
+}
+
+footer * {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.footer-content {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	flex-direction: column;
+}
+
+.footer-content h3 {
+	font-size: 1.8em;
+	font-weight: 400;
+	text-transform: capitalize;
+	line-height: 3rem;
+}
+
+.footer-content p {
+	max-width: 500px;
+	margin: 10px auto;
+	line-height: 28px;
+	font-size: 14px;
+}
+
+.socials {
+	list-style-type: none;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin: 1rem 0 3rem 0;
+}
+
+.socials li {
+	margin: 0 10px;
+}
+
+.socials a {
+	text-decoration: none;
+	color: white;
+}
+
+.socials a i {
+	font-size: 1.1rem;
+	transition: color .4s ease;
+}
+
+.socials a:hover i {
+	color: purple;
+}
+
+.footer-bottom {
+	background-color: black;
+	width: 100vw;
+	padding: 20px 0;
+	text-align: center;
+}
+
+.footer-bottom p {
+	font-size: 14px;
+	word-spacing: 2px;
+	text-transform: capitalize;
+}
+
+.footer-bottom span {
+	text-transform: uppercase;
+	opacity: .4;
+	font-weight: 200;
+}
+
+
+@media only screen and (max-width: 1000px) {
+
+	.header-logo h1 {
+		font-size: 25px;
+	}
+
+	.navigation a {
+		padding: 0 10px;
+	}
+
+
+
+}
+
+@media only screen and (max-width: 600px) {
+	.header-logo h1 {
+		font-size: 18px;
+		text-align: center;
+	}
+
+	.header-logo h1 a span {
+		display: block;
+	}
+
+	.navigation a {
+		padding: 0 5px;
+	}
+
+	.navigation a:last-child {
+		padding-left: 10px;
+	}
+
+	.navigation a li {
+		font-size: 10px;
+	}
+
+	.title-1 {
+		font-size: 28px;
+	}
+
+	.subtitle-1 {
+		font-size: 25px;
+	}
+
+}
